@@ -18,7 +18,7 @@ title : Visual Studio 2013 Extension File Nesting add Typescript Rule (記錄)
   2. [src\Nesters\Automated\TypescriptNester.cs](https://github.com/leejulee/FileNesting/blob/VS2013_TypeScript/src/Nesters/Automated/TypescriptNester.cs){:target="_blank"} (新增 TypeScript 規則的 TypescriptNester.cs)
   3. [src\Nesters\FileNestingFactory](https://github.com/leejulee/FileNesting/blob/VS2013_TypeScript/src/Nesters/FileNestingFactory.cs){:target="_blank"} (新增 TypescriptNester 項目)
 - [詳細異動記錄](https://github.com/leejulee/FileNesting/commit/502f72f8a775293a0f4686c1fe174460b143f9cd){:target="_blank"}
-- 修改後Github位置：[https://github.com/leejulee/FileNesting/tree/VS2013_TypeScript](https://github.com/leejulee/FileNesting/tree/VS2013_TypeScript){:target="_blank"}
+- 修改後Github位置：[VS2013 File Nesting for TypeScript](https://github.com/leejulee/FileNesting/tree/VS2013_TypeScript){:target="_blank"}
 
 ## VS2013 設定配置
 - ### Tools→Options (設置開啟Typescript Rule)
