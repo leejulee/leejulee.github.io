@@ -21,12 +21,12 @@ title : Visual Studio 2013 Extension File Nesting add Typescript Rule (記錄)
 - 修改後Github位置：[VS2013 File Nesting for TypeScript](https://github.com/leejulee/FileNesting/tree/VS2013_TypeScript){:target="_blank"}
 
 ## VS2013 設定配置
-- ### Tools→Options (設置開啟Typescript Rule)
+### 1. Tools→Options (設置開啟Typescript Rule)
   <img class="img-responsive" src="{{ site.url }}/assets/images/posts/20160604/001.png" alt="001"/>
-- ### 在最上層資料夾鍵右鍵→File Nesting → Auto-nest selected items
+### 2.  在最上層資料夾鍵右鍵→File Nesting → Auto-nest selected items
   <img class="img-responsive" src="{{ site.url }}/assets/images/posts/20160604/002.png" alt="002"/> 
-- ### 成功結果
+### 3.  成功結果
   <img class="img-responsive" src="{{ site.url }}/assets/images/posts/20160604/003.png" alt="003"/>
 
-### 參考資料
-[Extension Debug](http://stackoverflow.com/questions/9281662/how-to-debug-visual-studio-extensions){:target="_blank"}
+### 4. 參考資料
+  [Extension Debug](http://stackoverflow.com/questions/9281662/how-to-debug-visual-studio-extensions){:target="_blank"}
