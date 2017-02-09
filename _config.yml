@@ -11,11 +11,11 @@ highlighter: rouge
 title : Leo Li
 tagline: Site Tagline
 author :
-  name : Leo
+  name : Leo Li
   email : killks40s@yahoo.com.tw
   github : leejulee
-  twitter : leoli
-  feedburner : leoli
+  twitter : Leo Li
+  feedburner : Leo Li
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://leejulee.github.io
 
 gems: ["jekyll-sitemap"]
 
