@@ -1,0 +1,31 @@
+body {
+	font-family: "Open Sans, MundoSans, " Helvetica Neue ", Arial, Helvetica, sans-serif";
+	margin: 0;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-feature-settings: "liga=1, dlig=1";
+	-ms-font-feature-settings: "liga", "dlig";
+	-webkit-font-feature-settings: "liga", "dlig";
+	-o-font-feature-settings: "liga", "dlig";
+	font-feature-settings: "liga", "dlig";
+}
+
+.teaserimage {
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.teaserimage .teaserimage-image {
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	text-indent: -9999px;
+}
