@@ -17,6 +17,12 @@ author :
   twitter : Leo Li
   feedburner : Leo Li
 
+name : Leo Li
+
+github : leejulee
+blogger: leeleeju.blogspot.tw
+slideshare: leejulee
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -30,6 +36,26 @@ production_url : http://leejulee.github.io
 gems: ["jekyll-sitemap"]
 
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# do you want some animations?
+animation: true
+
+bio: I like ......
+
+# if you don't need "about" or "blog", comment them out below
+about: false
+blog: true
+
+url: https://leejulee.github.io/
+
+external-image: false
+
+picture: assets/images/profile.jpg
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
