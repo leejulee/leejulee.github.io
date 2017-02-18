@@ -2,6 +2,7 @@
 layout: post
 category : article
 title : Visual Studio 2013 Extension File Nesting add Typescript Rule (記錄)
+tags : [VS2013,Typescript]
 ---
 
 ## 簡述
