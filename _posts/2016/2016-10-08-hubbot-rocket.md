@@ -10,6 +10,11 @@ hubot是個開源的機器人框架，像是Salck、RocketChat這類的團隊溝
 
 ## 環境準備
 - install [node.js、npm](https://nodejs.org/en/)
+- install RocketChat
+    1. [Docker](https://github.com/RocketChat/Rocket.Chat#docker)
+    2. [Development](https://github.com/RocketChat/Rocket.Chat#development)
+    
+    > meteor 自訂port的語法 `meteor --port 3010` 
 
 ## Skill
 - [coffeejs](http://coffeescript.org/)
