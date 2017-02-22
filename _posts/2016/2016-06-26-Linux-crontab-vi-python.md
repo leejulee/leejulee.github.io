@@ -78,6 +78,7 @@ tags : [Linux,Python]
         - , ：表示該欄位多選項目時間都可以
     - 情境：星期一至五固定九點提醒訂便當
         - 設定值： `0 9 * * 1,2,3,4,5 /opt/orderlunch.py`
+        - 設定可執行權限 [chmod](http://linux.vbird.org/linux_basic/0210filepermission.php#chmod) x /opt/orderlunch.py
 
 ## Python Command Line & example
 - 打開 python 程式語法
@@ -147,6 +148,7 @@ tags : [Linux,Python]
 - [鳥哥的 Linux 私房菜 - vi](http://linux.vbird.org/linux_basic/redhat6.1/linux_07vi.php)
 - [Cron](https://zh.wikipedia.org/wiki/Cron)
 - [鳥哥的 Linux 私房菜 - crontab](http://linux.vbird.org/linux_basic/0430cron.php)
+- [鳥哥的 Linux 私房菜 - chmod](http://linux.vbird.org/linux_basic/0210filepermission.php#chmod)
 - [Shebang (Unix)](https://en.wikipedia.org/wiki/Shebang_(Unix))
 - [Python Basic Syntax](https://www.tutorialspoint.com/python/python_basic_syntax.htm)
 - [Python Functions](https://www.tutorialspoint.com/python/python_functions.htm)
