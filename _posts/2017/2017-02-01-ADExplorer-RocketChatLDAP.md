@@ -6,7 +6,7 @@ tags : [Windows,Tools]
 ---
 
 ## 簡述
-最近想試RocketChat的LDAP設定，但對於ad相關資訊又不是很了解，後來上網找到了一個工具：[AdExplorer](https://technet.microsoft.com/en-us/sysinternals/adexplorer.aspx)，它是個簡易查詢個人ad資訊的工具，大大減少撞牆及申請手續麻煩。
+最近想試[RocketChat](https://rocket.chat/)的LDAP設定，但對於ad相關資訊又不是很了解，後來上網找到了一個工具：[AdExplorer](https://technet.microsoft.com/en-us/sysinternals/adexplorer.aspx)，它是個簡易查詢個人ad資訊的工具，大大減少撞牆及申請手續麻煩。
 
 ## Skill
 - [Active Directory](https://zh.wikipedia.org/wiki/Active_Directory)
