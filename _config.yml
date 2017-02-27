@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md","2011-12-29-jekyll-introduction.md"]
 highlighter: rouge
 
 # Themes are encouraged to use these universal variables 
@@ -22,6 +22,7 @@ name : Leo Li
 github : leejulee
 blogger: leeleeju.blogspot.tw
 slideshare: leejulee
+dockerhub: leejulee
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -162,4 +163,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
