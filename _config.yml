@@ -114,7 +114,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : leejulee-gitblog
     livefyre :
       site_id : 123
     intensedebate :
