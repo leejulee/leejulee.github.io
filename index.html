@@ -1,17 +1,25 @@
 ---
 layout: null
 title: Home
+description : Leo Blog
 ---
 <!DOCTYPE html>
 
 <html>
-  <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="{{ ASSET_PATH }}/assets/themes/css/main.css" rel="stylesheet">
-	<!--<link href="{{ ASSET_PATH }}/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+		<title>{{ page.title }}</title>
+		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+		<meta name="author" content="{{ site.author.name }}">
+		<link href="{{ ASSET_PATH }}/assets/themes/css/main.css" rel="stylesheet">
+		<!--<link href="{{ ASSET_PATH }}/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+		
+		<!-- atom & rss feed -->
+    	<link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    	<link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 	</head>
 <body>
 <div class="wrapper-normal">
