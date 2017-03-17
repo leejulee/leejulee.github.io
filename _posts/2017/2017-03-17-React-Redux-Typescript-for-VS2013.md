@@ -438,5 +438,182 @@ export const SwitchSelectStore = createStore(
     
     <img class="img-responsive" src="{{ site.url }}/assets/images/posts/20170317/0006.gif" alt="0006"/>
 
+## Example 3-2 react-redux & whatwg-fetch
+
+- app.tsx
+
+```
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
+import SwitchSelect from 'components/switch-select';
+import {SwitchSelectStore} from 'stores/switch-select-store';
+
+ReactDOM.render(
+    <Provider store={SwitchSelectStore}>
+        <SwitchSelect />
+    </Provider>,
+    document.getElementById('content')
+);
+```
+
+- View
+
+```
+@{
+    Layout = null;
+}
+  
+<html>
+<head>
+    <title>Hello React</title>
+</head>
+<body>
+    <script src="~/Scripts/require.js"></script>
+    <script type="text/javascript">
+        requirejs.config({
+            baseUrl: '/Scripts',
+            paths: {
+                react: 'react/react',
+                'react-dom': 'react/react-dom',
+                redux: 'redux/redux',
+                'react-redux': 'redux/react-redux',
+                'fetch': 'whatwg-fetch/fetch',
+                'components/switch-select': 'home/components/switch-select',
+                'stores/switch-select-store': 'home/stores/switch-select-store'
+            }
+        })
+  
+        // Load the main app module to start the app
+        requirejs(["/scripts/home/app.js"]);
+    </script>
+    <h1>Typescript Demo</h1>
+    <div id="content"></div>
+</body>
+</html>
+```
+
+- HomeController
+
+```
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        return View();
+    }
+    public ActionResult GetData()
+    {
+        var data = new[] {
+            new { value = 5, label = "okinawa" }
+            ,new { value = 6, label = "toyko" }
+        };
+        return Json(data, JsonRequestBehavior.AllowGet);
+    }
+}
+```
+
+- switch-select.tsx
+
+```
+import * as React from 'react';
+import {connect} from 'react-redux';
+declare var fetch: any;
+  
+class SwitchSelect extends React.Component<any, any>{
+    isDefault: boolean = false;
+  
+    constructor(props) {
+        super(props);
+    }
+  
+    componentDidMount() {
+        this.swdata(!this.isDefault);
+    }
+  
+    swdata(isDefault: boolean) {
+        if (isDefault) {
+            this.props.getDefault();
+        } else {
+            this.props.getData();
+        }
+        this.isDefault = isDefault;
+    }
+  
+    render() {
+        var items = this.props.opts || [];
+        return <div>
+            <select>
+                {
+                    items.map((item) => {
+                        return <option key={'o-' + item.value} value={item.value}>{item.label}</option>
+                    })
+                }
+            </select>
+            <button type="button" onClick={e => this.swdata(!this.isDefault) } >switch</button>
+        </div>
+    }
+}
+  
+const mapStateToProps = (state) => state;
+  
+const mapDispatchToProps = (dispatch) => ({
+    getData: () => {
+        dispatch({ type: 1 });
+    },
+    getDefault: () => {
+        //dispatch({ type: 2 });
+        getDefaultData(dispatch);
+    }
+});
+  
+function getDefaultData(dispatch) {
+    fetch('/home/GetData')
+        .then((response) => response.json())
+        .then(function (json) {
+            return dispatch({ type: -1, data: json });
+        }).catch(function (ex) {
+            console.log('parsing failed', ex)
+        })
+}
+  
+export default connect(mapStateToProps, mapDispatchToProps)(SwitchSelect);
+```
+
+- switch-select-store.tsx
+
+```
+import {createStore} from 'redux';//, combineReducers, applyMiddleware
+  
+export const SwitchSelectStore = createStore(
+    (state, action) => {
+        switch (action.type) {
+            case 1:
+                return {
+                    opts: [
+                        { value: 0, label: 'iphone' },
+                        { value: 1, label: 'android' },
+                    ]
+                }
+            case 2:
+                return {
+                    opts: [
+                        { value: 3, label: 'Leo' },
+                        { value: 4, label: 'Lee' },
+                    ]
+                }
+            case -1:
+                return { opts: action.data }
+            default:
+                return state;
+        }
+    }, { opts: [] });
+```
+
+- Result
+
+    <img class="img-responsive" src="{{ site.url }}/assets/images/posts/20170317/0007.gif" alt="0007"/>
+
+
 ## 參考資料
 - [使用Typescript編寫Redux+Reactjs應用程序](https://my.oschina.net/redhu/blog/648485)
