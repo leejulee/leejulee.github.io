@@ -24,6 +24,8 @@ tags : [Javascript,React]
 - [Redux 中文文檔](http://cn.redux.js.org/docs/basics/index.html)
 - [Redux tutorial 中文](https://github.com/react-guide/redux-tutorial-cn)
 
+## 操作步驟
+
 {% include react-create-project.md %}
 
 - Nuget Install [RequireJS](https://www.nuget.org/packages/RequireJS/)
