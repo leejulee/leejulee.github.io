@@ -6,7 +6,7 @@ tags : [VS2013]
 ---
 
 <div class="responsive-container">
-    <iframe class="embed-responsive-item" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/5a1qzC9Vt8A6hw"></iframe>
+    <iframe class="embed-responsive-item" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/key/5a1qzC9Vt8A6hw"></iframe>
 </div>
 
 
