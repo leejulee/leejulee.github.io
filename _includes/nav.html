@@ -9,18 +9,18 @@
         {% if site.blog == true %}
             {% if page.title != "Blog" %}
                 <li class="item">
-                    <a class="link" href="{{ site.url }}/archive">Archive</a>
+                    <a class="link" href="{{ site.url }}/articles">Articles</a>
                 </li>
             {% endif %}
         {% endif %}
 
-        {% if site.search == true %}
+        <!-- {% if site.search == true %}
             {% if page.title != "Search" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/blog/search">Search</a>
                 </li>
             {% endif %}
-        {% endif %}
+        {% endif %} -->
 
         {% if site.about == true %}
             {% if page.title != "About" %}
